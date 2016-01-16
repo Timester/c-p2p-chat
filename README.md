@@ -1,11 +1,12 @@
-c-p2p-chat   +README
+c-p2p-chat
 ==========   
    
-Peer to peer chat application written in C for CS 3251
+P2P chat application written in C, based on the work of:
 
-Group: Robin Egg Blue Team
-Members: Charles (Ben) Schmaltz, Alexander Leavitt, Yiqi Chen
+Charles (Ben) Schmaltz, Alexander Leavitt, Yiqi Chen
 
+How to build & run
+------------------
 
 run make to compile the code
 
@@ -19,25 +20,33 @@ to run tracker program, it takes in one optional parameter:
 to run peer program, it takes in 3 parameters: 
 
   ./peer %tracker_ip% %tracker_port% %peer_port%
+  
+  
+How to use:
+-----------
 
-peer program takes user inputs, and below is the input format:
+Peer program takes user inputs, and below is the input format:
 
-to request a list of all available rooms and number of peers in each room: 
+* To request a list of all available rooms and number of peers in each room: 
   
   -r
 
-to request to create a new room: 
+* To request to create a new room: 
 
   -c
 
-to request to join or switch to a new room: 
+* To request to join or switch to a new room: 
 
   -j %new_chatroom_number%
 
-to request to leave a room
+* To request to leave a room
 
   -l
 
-to send a message to peers in the chatroom: 
+* To send a message to peers in the chatroom: 
 
   -m %message_that_you_want_to_send%
+  
+* To set nickname:
+
+  -n %nickname%
